@@ -23,23 +23,27 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	<dependencies></dependencies>
 
 	<build>
+		<pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
+					<goals>install</goals>
 				</configuration>
 			</plugin>
 		</plugins>
+		</pluginManagement>
 	</build>
+	<scm>
+		<developerConnection>scm:git:https://github.com/megi-kd/sfg-pet-clinic.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
 </project>
