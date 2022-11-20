@@ -3,7 +3,7 @@ package guru.springframework.sfgpetclinic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "guru")
 public class SfgPetClinicApplication {
 
 	public static void main(String[] args) {
